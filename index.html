@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nominos - Online Food Ordering</title>
+</head>
+<body>
+    <header>
+        <h1>Nominos Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul id="menu-items">
+            <li>
+                <span>Pizza</span>
+                <button onclick="addToOrder('Pizza')">Add to Order</button>
+            </li>
+            <li>
+                <span>Burger</span>
+                <button onclick="addToOrder('Burger')">Add to Order</button>
+            </li>
+            <li>
+                <span>Pasta</span>
+                <button onclick="addToOrder('Pasta')">Add to Order</button>
+            </li>
+        </ul>
+    </section>
+
+    <section id="order">
+        <h2>Your Order</h2>
+        <ul id="order-list"></ul>
+    </section>
+
+    <section id="checkout">
+        <h2>Checkout</h2>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
